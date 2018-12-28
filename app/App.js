@@ -18,7 +18,7 @@ import {
   Alert,
 } from 'react-native';
 
-import { Router, Scene, ActionConst } from 'react-native-router-flux';
+import { Router, Scene, ActionConst, Actions } from 'react-native-router-flux';
 
 import Login from './Login';
 import DashBoard from './DashBoard';
@@ -65,6 +65,7 @@ class App extends Component {
           <Scene key={'dashBoard'} component={DashBoard} type={ActionConst.RESET} />
           <Scene key={'prevScreenData'} component={PrevScreenData} />
           <Scene key={'multipleScreen'} component={MultipleScreen} />
+          <Scene key={'androidBack'} component={AndroidBack} />
         
         </Scene>
       </Router>

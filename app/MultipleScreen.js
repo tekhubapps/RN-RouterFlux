@@ -42,6 +42,15 @@ export default class MultipleScreen extends Component {
           <Text style={[styles.buttonTextSignup, {color: '#057DC1'}]}>Goto DashBoard</Text>
         </TouchableHighlight>
 
+        <TouchableHighlight style={styles.buttonSignup}
+          underlayColor={'transparent'}
+          onPress={() => {
+            Actions.pop();
+          }}
+        >
+          <Text style={[styles.buttonTextSignup, {color: '#057DC1'}]}>Back</Text>
+        </TouchableHighlight>
+
       </View>
     );
   }
